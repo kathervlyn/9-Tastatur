@@ -1,0 +1,56 @@
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.keys {
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    font-size: large;
+}
+
+.keyboard {
+    border: solid 5px darkslategray;
+    padding: 10px;
+    width: 620px;
+}
+
+.space {
+    width: 280px;
+    height: 50px;
+    margin-left: 1px;
+    font-size: large;
+}
+
+.textBox {
+    border: solid 5px darkslategray;
+    width: 620px;
+    height: 300px;
+    padding: 10px;
+}
+
+.caps {
+    width: 100px;
+    height: 50px;
+    margin: 1px;
+    font-size: large;
+}
+
+.delete {
+    width: 220px;
+    height: 50px;
+    margin: 1px;
+}

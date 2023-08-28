@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="textBox" id="textBox"></div>
+
+    <div class="keyboard">
+        <button class="keys" onclick="keyPress(this)">Q</button>
+        <button class="keys" onclick="keyPress(this)">W</button>
+        <button class="keys" onclick="keyPress(this)">E</button>
+        <button class="keys" onclick="keyPress(this)">R</button>
+        <button class="keys" onclick="keyPress(this)">T</button>
+        <button class="keys" onclick="keyPress(this)">Y</button>
+        <button class="keys" onclick="keyPress(this)">U</button>
+        <button class="keys" onclick="keyPress(this)">I</button>
+        <button class="keys" onclick="keyPress(this)">O</button>
+        <button class="keys" onclick="keyPress(this)">P</button>
+        <button class="keys" onclick="keyPress(this)">Å</button><br>
+
+        <button class="keys" onclick="keyPress(this)">A</button>
+        <button class="keys" onclick="keyPress(this)">S</button>
+        <button class="keys" onclick="keyPress(this)">D</button>
+        <button class="keys" onclick="keyPress(this)">F</button>
+        <button class="keys" onclick="keyPress(this)">G</button>
+        <button class="keys" onclick="keyPress(this)">H</button>
+        <button class="keys" onclick="keyPress(this)">J</button>
+        <button class="keys" onclick="keyPress(this)">K</button>
+        <button class="keys" onclick="keyPress(this)">L</button>
+        <button class="keys" onclick="keyPress(this)">Ø</button>
+        <button class="keys" onclick="keyPress(this)">Æ</button><br>
+
+        <button class="keys" onclick="keyPress(this)">Z</button>
+        <button class="keys" onclick="keyPress(this)">X</button>
+        <button class="keys" onclick="keyPress(this)">C</button>
+        <button class="keys" onclick="keyPress(this)">V</button>
+        <button class="keys" onclick="keyPress(this)">B</button>
+        <button class="keys" onclick="keyPress(this)">N</button>
+        <button class="keys" onclick="keyPress(this)">M</button>
+        <button class="delete" onclick="deleteBar()">Delete</button><br>
+
+        <button class="caps" onclick="capsLock()">Caps</button>
+        <button class="space" onclick="spaceBar()">------</button>
+
+
+    </div>
+
+    <script>
+        let textDisplay = document.getElementById('textBox');
+        var capsOn = false;
+        let spaceB = true;
+
+        function keyPress(element) {
+            textDisplay.innerHTML += element.innerHTML;
+        }
+
+        function capsLock() {
+            if (capsOn == false) {
+                textDisplay.style.textTransform = 'lowercase';
+                capsOn = true;
+            }
+            else if (capsOn == true) {
+                textDisplay.style.textTransform = '';
+                capsOn = false;
+            }
+        }
+
+        function deleteBar() {
+            textDisplay.innerHTML = '';
+        }
+//&nbsp = mellomrom
+    </script>
+</body>
+
+</html>
